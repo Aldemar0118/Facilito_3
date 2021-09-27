@@ -1,30 +1,29 @@
 <template>
   <div class="home">
     <div>
-        <RetirarS msg="RETIRAR STOCK DE PRODUCTO"/>
+        <MenuStockR msg="RETIRAR STOCK DE PRODUCTO"/>
     </div>
+    <br>
     <div>
-        <RetirarS1 msg="Producto"/>
+        <RetirarStock msg=""/>
     </div>
-    <div>
-        <RetirarS2 msg="Retirar Stock"/>
-    </div>
+ 
     
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import RetirarS from '@/components/RetirarS.vue'
-import RetirarS1 from '@/components/RetirarS1.vue'
-import RetirarS2 from '@/components/RetirarS2.vue'
+import MenuStockR from '@/components/MenuStockR.vue'
+import RetirarStock from '@/components/RetirarStock.vue'
+
 
 export default {
   name: 'retirarstock',
   components: {
-RetirarS,
-RetirarS1,
-RetirarS2
+MenuStockR,
+RetirarStock,
+
   }
 }
 </script>

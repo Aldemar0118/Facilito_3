@@ -22,13 +22,18 @@ const routes = [
   },
   {
     path: "/stockproductos",
-    name: "StockProsuctos",
+    name: "stockproductos",
     component: () => import("../views/StockProductos"),
   },
   {
-    path: "/add/:id",
-    name: "agregarstockproducto",
+    path: "/edit/:id",
+    name: "add",
     component: () => import("../views/AgregarStock"),
+  },
+  {
+    path: "/edit/:id",
+    name: "att",
+    component: () => import("../views/RetirarStock"),
   },
 ];
 

@@ -36,8 +36,19 @@ productoRoute.route("/edit-producto/:id").get((req, res) => {
     }
   });
 });
-// Editar Producto
+// agregar Producto
 productoRoute.route("/add-producto/:id").get((req, res) => {
+  ProductoModel.findById(req.params.id, (error, data, next) => {
+    if (error) {
+      console.log(error);
+      return next(error);
+    } else {
+      res.json(data);
+    }
+  });
+});
+// retirar Producto
+productoRoute.route("/att-producto/:id").get((req, res) => {
   ProductoModel.findById(req.params.id, (error, data, next) => {
     if (error) {
       console.log(error);

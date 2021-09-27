@@ -15,6 +15,10 @@
                 <th>Marca</th>
                 <th>Distribuidor</th>
                 <th>Stock</th>
+                 <th>Agregar</th>
+                 <th>Retirar</th>
+
+              
           </tr>
         </thead>
         <tbody >
@@ -29,11 +33,21 @@
             <td>{{ producto.marca }}</td>
             <td>{{ producto.distribuidor }}</td>
             <td>{{ producto.stock }}</td>
+            
+            <td>
             <router-link
                 :to="{ name: 'add', params: { id: producto._id } }"
                 class="btn-outline-primary"
-                >Editar
+                >Agregar Stock
               </router-link>
+            </td>
+            <td>
+              <router-link
+                :to="{ name: 'att', params: { id: producto._id } }"
+                class="btn-outline-primary"
+                >Retirar Stock
+              </router-link>
+              </td>
           </tr>
         </tbody>
       </table>
@@ -51,7 +65,7 @@ export default {
     };
   },
   created() {
-    let apiURL = "http://localhost:4000/api/";
+    let apiURL = "http://localhost:4000/api";
     axios
       .get(apiURL)
       .then((res) => {

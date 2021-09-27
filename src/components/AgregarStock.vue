@@ -159,7 +159,7 @@
             type="text" 
             v-model="producto.distribuidor"
             class="input- input-group-text"
-            rdisabled="disabled"
+            disabled="disabled"
             />
         </td>
         <td>
@@ -202,14 +202,14 @@ export default {
     };
   },
   created() {
-    let apiURL = `http://localhost:4000/api/edit-producto/${this.$route.params.id}`;
+    let apiURL = `http://localhost:4000/api/add-producto/${this.$route.params.id}`;
 
     axios.get(apiURL).then((res) => {
       this.producto = res.data;
     });
   },
   
-   name: 'agregarstockproducto',
+   name: 'agregarstock',
   props: {
     msg: String
   },
