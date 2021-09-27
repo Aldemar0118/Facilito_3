@@ -1,11 +1,11 @@
 <template>
   <div class="home">
     <div>
-        <MenuStockR msg="RETIRAR STOCK DE PRODUCTO"/>
+        <MenuStockR msg=""/>
     </div>
     <br>
     <div>
-        <RetirarStock msg=""/>
+        <RetirarStock msg="RETIRAR STOCK DE  PRODUCTO"/>
     </div>
  
     
