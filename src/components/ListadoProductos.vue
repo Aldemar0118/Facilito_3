@@ -14,6 +14,8 @@
                 <th>Genero</th>
                 <th>Marca</th>
                 <th>Distribuidor</th>
+                <th>Editar</th>
+                <th>Borrar</th>
           </tr>
         </thead>
         <tbody >
@@ -31,13 +33,16 @@
               <router-link
                 :to="{ name: 'edit', params: { id: producto._id } }"
                 class="btn-outline-primary"
+                >
                 >Editar
               </router-link>
+              </td>
+              <td>
               <button
                 @click.prevent="deleteProducto(producto._id)"
                 class="btn btn-danger"
               >
-                Borrar
+                >Borrar
               </button>
             </td>
           </tr>
