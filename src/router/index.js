@@ -20,6 +20,16 @@ const routes = [
     name: "edit",
     component: () => import("../views/EditarProducto"),
   },
+  {
+    path: "/stockproductos",
+    name: "StockProsuctos",
+    component: () => import("../views/StockProductos"),
+  },
+  {
+    path: "/add/:id",
+    name: "agregarstockproducto",
+    component: () => import("../views/AgregarStock"),
+  },
 ];
 
 const router = new VueRouter({

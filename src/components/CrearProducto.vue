@@ -154,6 +154,16 @@
             class="input- input-group-text"
             required/>
         </td>
+         <td>
+        <label for="">Stock:</label>   
+        </td>
+         <td>
+            <input 
+            type="text" 
+            v-model="producto.stock"
+            class="input- input-group-text"
+            required/>
+        </td>
 </tr>
 <tr class="tr1">
 
@@ -161,11 +171,11 @@
            border="1px"
            border-color="black"
            >
-                <button class="btn-outline-primary">ACEPTAR</button>
+                <button class="btn-outline-primary">REGISTRAR</button>
             </td>
 
 <td class="td1" colspan="2">
-    <button class="btn-outline-secondary">CANCELAR</button>
+    <button class="btn-outline-secondary" type="reset">CANCELAR</button>
 
   </td>
 </tr>  
@@ -230,10 +240,12 @@ export default {
 .btn-outline-primary{
   padding:0px 10px 0px 10px ;
   border-radius: 75px;
+  border: 1px solid #2A5D67;
 }
 .btn-outline-secondary{
   padding:0px 12px 0px 12px ;
   border-radius: 75px;
+  border: 1px solid #2A5D67;
 }
 
 
@@ -323,6 +335,7 @@ td{
   .btn-outline-primary{
     padding:0px 10px 0px 10px ;
     border-radius: 75px;
+   border: 1px solid #2A5D67;
     text-align: left;
   }
   .btn-Iniciar{

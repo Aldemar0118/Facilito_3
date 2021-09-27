@@ -14,6 +14,7 @@
                 <th>Genero</th>
                 <th>Marca</th>
                 <th>Distribuidor</th>
+                <th>Stock</th>
           </tr>
         </thead>
         <tbody >
@@ -27,19 +28,12 @@
             <td>{{ producto.genero }}</td>
             <td>{{ producto.marca }}</td>
             <td>{{ producto.distribuidor }}</td>
-            <td>
-              <router-link
-                :to="{ name: 'edit', params: { id: producto._id } }"
+            <td>{{ producto.stock }}</td>
+            <router-link
+                :to="{ name: 'add', params: { id: producto._id } }"
                 class="btn-outline-primary"
                 >Editar
               </router-link>
-              <button
-                @click.prevent="deleteProducto(producto._id)"
-                class="btn btn-danger"
-              >
-                Borrar
-              </button>
-            </td>
           </tr>
         </tbody>
       </table>
@@ -57,7 +51,7 @@ export default {
     };
   },
   created() {
-    let apiURL = "http://localhost:4000/api";
+    let apiURL = "http://localhost:4000/api/";
     axios
       .get(apiURL)
       .then((res) => {
@@ -67,7 +61,7 @@ export default {
         console.log(error);
       });
   },
-   name: 'ListadoProductos',
+   name: 'StockProductos',
   props: {
     msg: String
   },

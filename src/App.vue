@@ -63,7 +63,7 @@ li{
    justify-content: right;
     background: #4ae3b5;
     padding: 0px 5px 0px 5px;
-    color: #fff;
+    color: rgb(145, 230, 106);
     text-decoration: none; 
     border-radius:80px;
  }

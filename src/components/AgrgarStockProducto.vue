@@ -18,7 +18,8 @@
             type="text" 
             class=" input- input-group-text" 
             v-model="producto.nombre_del_producto"
-            required/>
+            disabled="disabled"
+            />
         </td>
 
         <td class="td1">
@@ -30,7 +31,7 @@
             type="text"
             v-model="producto.talla"
             class="input- input-group-text"
-            required
+            disabled="disabled"
             >
                 <option value="">seleccione</option>
                 <option value="34">34</option>
@@ -55,7 +56,8 @@
             type="text"
             v-model="producto.tipo"
             class="input- input-group-text"
-            required>
+            disabled="disabled"
+            >
                 <option value="">seleccione</option>
                 <option value="Deportivo">Deportivo</option>
                 <option value="Tacon">Tacon</option>
@@ -74,7 +76,8 @@
             type="text" 
             v-model="producto.costo"
             class="input- input-group-text"
-            required/>
+           disabled="disabled"
+            />
         </td>
 
 </tr>
@@ -88,7 +91,8 @@
         type="text" 
         v-model="producto.precio"
         class="input- input-group-text"
-        required/>
+        disabled="disabled"
+        />
 
     </td>
     <td class="td1">
@@ -99,7 +103,8 @@
         type="text" 
         v-model="producto.color"
         class="input- input-group-text"
-        required>
+        disabled="disabled"
+        >
             <option value="">seleccione</option>
             <option value="Negro">Negro</option>
             <option value="Cafe">Cafe</option>
@@ -120,12 +125,14 @@
         type="text"
         v-model="producto.genero"
         class="input- input-group-text"
-        required>
+        disabled="disabled"
+        >
             <option value="">seleccione</option>
-            <option value="Dama">Dama</option>
             <option value="Caballero">Caballero</option>
-            <option value="Unisex">Unisex</option>
             <option value="Dama">Dama</option>
+            <option value="Unisex">Unisex</option>
+            <option value="Dama">Niño</option>
+            <option value="Dama">Niñ<a href=""></a></option>
         </select>
     </td>
 
@@ -138,7 +145,8 @@
         type="text" 
         v-model="producto.marca"
         class="input- input-group-text"
-        required/>
+        disabled="disabled"
+        />
     </td>
 </tr>
 <tr class="tr1">
@@ -150,6 +158,17 @@
             <input 
             type="text" 
             v-model="producto.distribuidor"
+            class="input- input-group-text"
+            rdisabled="disabled"
+            />
+        </td>
+        <td>
+        <label for="">Stock:</label>   
+        </td>
+         <td>
+            <input 
+            type="text" 
+            v-model="producto.stock"
             class="input- input-group-text"
             required/>
         </td>
@@ -190,7 +209,7 @@ export default {
     });
   },
   
-   name: 'EditarProducto',
+   name: 'agregarstockproducto',
   props: {
     msg: String
   },
@@ -202,7 +221,7 @@ export default {
         .put(apiURL, this.producto)
         .then((res) => {
           console.log(res);
-          this.$router.push("/listadoproductos");
+          this.$router.push("/stockproductos");
         })
         .catch((error) => {
           console.log(error);

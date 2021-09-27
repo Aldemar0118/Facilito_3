@@ -36,7 +36,17 @@ productoRoute.route("/edit-producto/:id").get((req, res) => {
     }
   });
 });
-
+// Editar Producto
+productoRoute.route("/add-producto/:id").get((req, res) => {
+  ProductoModel.findById(req.params.id, (error, data, next) => {
+    if (error) {
+      console.log(error);
+      return next(error);
+    } else {
+      res.json(data);
+    }
+  });
+});
 // Update Producto
 productoRoute.route("/update-producto/:id").put((req, res, next) => {
   ProductoModel.findByIdAndUpdate(

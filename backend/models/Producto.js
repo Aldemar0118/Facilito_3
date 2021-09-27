@@ -30,6 +30,9 @@ let productoSchema = new Schema(
       distribuidor: {
         type: String,
       },
+      stock: {
+        type: String,
+      },
   },
   {
     collection: "producto",

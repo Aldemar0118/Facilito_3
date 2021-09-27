@@ -4,7 +4,7 @@
      <div>
         <Menu msg=""/>
     </div>
-     <v-spacer></v-spacer>
+    <br>
     <div>
         <CrearProducto msg="Registro de Producto"/>
        </div>

@@ -8,7 +8,7 @@
             <li><router-link to="/">Registrar Producto</router-link></li> 
             <li><router-link to="/agregarstock">Agregar Stock</router-link></li>
             <li><router-link to="/retirarstock" >Retirar Stock</router-link></li>
-            <li><router-link to="/stock">Stock</router-link></li> 
+            <li><router-link to="/stockproductos">Stock</router-link></li> 
             <li><router-link to="/login" class="btn-Inicio-index">Salir</router-link></li>
         </ul>
     </td>
