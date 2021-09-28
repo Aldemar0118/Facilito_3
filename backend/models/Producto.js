@@ -15,22 +15,22 @@ let productoSchema = new Schema(
     costo: {
         type: String,
       },
-      precio: {
+    precio: {
         type: String,
       },
-      color: {
+    color: {
         type: String,
       },
-      genero: {
+    genero: {
         type: String,
       },
-      marca: {
+    marca: {
         type: String,
       },
-      distribuidor: {
+    distribuidor: {
         type: String,
       },
-      stock: {
+    stock: {
         type: String,
       },
   },

@@ -15,7 +15,7 @@
     </td>
   
     <td class="input-login">
-        <input class="input-group" type="int" name="Usuario" id="Usuario" placeholder="Numero de Documento"
+        <input class="input- input-group-text" type="int" name="Usuario" id="Usuario" placeholder="Numero de Documento"
         pattern="[0-9]{5,15}" title="Escriba su numero de cedula" onkeypress="return solonumeros(event)" onpaste="return false" required /> 
     </td>
 </tr>
@@ -25,7 +25,7 @@
     </td>
 
     <td  class="input-login">
-        <input class="input-group" type="password" size="20" name="Clave" id="Clave"
+        <input class="input- input-group-text" type="password" size="20" name="Clave" id="Clave"
         placeholder="Escriba su password" pattern="[0-9-a-z-za]{6,12}"
         title="Dijite su Clave de Usuario" required />
     </td>

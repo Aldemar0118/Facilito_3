@@ -35,6 +35,11 @@ const routes = [
     name: "att",
     component: () => import("../views/RetirarStock"),
   },
+  {
+    path: "/login",
+    name: "login",
+    component: () => import("../views/Login"),
+  },
 ];
 
 const router = new VueRouter({
