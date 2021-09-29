@@ -5,7 +5,7 @@
 </div>
 <br>
     <div>
-        <Flogin msg="Ingreso de Usuario"/>
+        <CrearUsuario msg="Ingreso de Usuario"/>
 </div>
   </div>
 </template>
@@ -13,13 +13,13 @@
 <script>
 // @ is an alias to /src
 import MenuLogin from '@/components/MenuLogin.vue'
-import Flogin from '@/components/Flogin.vue'
+import CrearUsuario from '@/components/CrearUsuario.vue'
 
 export default {
   name: 'login',
   components: {
     MenuLogin,
-    Flogin
+    CrearUsuario
   }
 }
 </script>

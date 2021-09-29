@@ -33,7 +33,8 @@ let productoSchema = new Schema(
     stock: {
         type: String,
       },
-  },
+      createdAt:{type:Date,default:Date.now},
+      },
   {
     collection: "producto",
   }
