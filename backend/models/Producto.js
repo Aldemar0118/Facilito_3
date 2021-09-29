@@ -5,34 +5,52 @@ let productoSchema = new Schema(
   {
     nombre_del_producto: {
       type: String,
+      maxlength: 30,
+      required: true,
     },
     talla: {
       type: String,
+      maxlength: 30,
+      required: true,
     },
     tipo: {
       type: String,
+      maxlength: 30,
+      required: true,
     },
     costo: {
-        type: String,
-      },
+      type: Number,
+      maxlength: 30,
+      required: true,
+    },
     precio: {
-        type: String,
-      },
+      type: Number,
+      maxlength: 30,
+      required: true,
+    },
     color: {
-        type: String,
-      },
+      type: String,
+      maxlength: 30,
+      required: true,
+    },
     genero: {
-        type: String,
-      },
+      type: String,
+      maxlength: 30,
+      required: true,
+    },
     marca: {
-        type: String,
-      },
+      type: String,
+      maxlength: 30,
+      required: true,
+    },
     distribuidor: {
-        type: String,
-      },
+      type: String,
+      maxlength: 30,
+      required: true,
+    },
     stock: {
-        type: String,
-      },
+      type: Number,
+    },
   },
   {
     collection: "producto",

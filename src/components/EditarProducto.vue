@@ -60,8 +60,8 @@
                 <option value="Deportivo">Deportivo</option>
                 <option value="Tacon">Tacon</option>
                 <option value="Botas">Botas</option>
-                <option value="Caballero">Caballero</option>
-                <option value="Dama">Dama</option>
+                <option value="Elegante">Elegante</option>
+                <option value="Casual">Casual</option>
             </select>
         </td>
 
@@ -103,9 +103,9 @@
             <option value="">seleccione</option>
             <option value="Negro">Negro</option>
             <option value="Cafe">Cafe</option>
-            <option value="Azul">Azul</option>
-            <option value="Mostaza">Mostaza</option>
-            <option value="Azul">Azul</option>
+            <option value="Rosado">Rosado</option>
+            <option value="Negro/Blanco">Negro/Blanco</option>
+            <option value="Verde Militar">Verde Militar</option>
             <option value="Rojo">Rojo</option>
         </select>
 
@@ -120,12 +120,15 @@
         type="text"
         v-model="producto.genero"
         class="input- input-group-text"
+        text-aling="left"
         required>
             <option value="">seleccione</option>
             <option value="Dama">Dama</option>
             <option value="Caballero">Caballero</option>
             <option value="Unisex">Unisex</option>
-            <option value="Dama">Dama</option>
+            <option value="Dama">Niño</option>
+            <option value="Dama">Niña</option>
+            <option value="Dama">Unisex Niños</option>
         </select>
     </td>
 
