@@ -1,7 +1,7 @@
 <template>
   <div class="home">
      <div>
-        <HomeF msg=" Aca ba el index"/>
+        <HomeF msg=" Aca  va el index"/>
     </div>
     <div>
       
