@@ -56,12 +56,15 @@
             v-model="producto.tipo"
             class="input- input-group-text"
             required>
-                <option value="">seleccione</option>
-                <option value="Deportivo">Deportivo</option>
+                <option value="">Seleccione</option>
+              
                 <option value="Tacon">Tacon</option>
                 <option value="Botas">Botas</option>
                 <option value="Elegante">Elegante</option>
                 <option value="Casual">Casual</option>
+                <option value="Deportivo">Deportivo</option> 
+                <option value="Deportivo Bota">Deportivo Bota</option>
+
             </select>
         </td>
 
@@ -103,10 +106,12 @@
             <option value="">seleccione</option>
             <option value="Negro">Negro</option>
             <option value="Cafe">Cafe</option>
-            <option value="Rosado">Rosado</option>
-            <option value="Negro/Blanco">Negro/Blanco</option>
-            <option value="Verde Militar">Verde Militar</option>
+            <option value="Azul">Azul</option>
+            <option value="Mostaza">Mostaza</option>
+            <option value="Azul">Azul</option>
             <option value="Rojo">Rojo</option>
+            <option value="Blanco">Blanco</option>
+             <option value="Gris">Gris</option>
         </select>
 
     </td>
@@ -122,13 +127,13 @@
         class="input- input-group-text"
         text-aling="left"
         required>
-            <option value="">seleccione</option>
+            <option value="">Seleccionar</option>
             <option value="Dama">Dama</option>
             <option value="Caballero">Caballero</option>
             <option value="Unisex">Unisex</option>
-            <option value="Dama">Niño</option>
-            <option value="Dama">Niña</option>
-            <option value="Dama">Unisex Niños</option>
+            <option value="Niño">Niño</option>
+            <option value="Niña">Niña</option>
+            <option value="Unisex Niños">Unisex Niños</option>
         </select>
     </td>
 
