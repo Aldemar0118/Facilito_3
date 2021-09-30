@@ -1,10 +1,10 @@
 <template>
   <div class="home">
      <div>
-        <MenuStock msg=""/>
+        <HomeF msg=" Aca ba el index"/>
     </div>
     <div>
-        <AgregarStock msg="Home"/>
+      
     </div>
     
     
@@ -13,15 +13,12 @@
 
 <script>
 // @ is an alias to /src
-import MenuStock from '@/components/MenuStock.vue'
-import AgregarStock from '@/components/AgregarStock.vue'
-
+import HomeF from '@/components/HomeF.vue'
 
 export default {
   name: 'Home',
   components: {
-MenuStock,
-AgregarStock,
+HomeF
 
   }
 }
