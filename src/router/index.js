@@ -1,14 +1,19 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import RegistroProducto from '../views/RegistroProducto.vue'
+import Home from '../views/Home.vue'
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
+    name: "Home",
+    component: Home,
+  },
+  {
+    path: "/registroproducto",
     name: "RegistroProducto",
-    component: RegistroProducto,
+    component: () => import("../views/RegistroProducto"),
   },
   {
     path: "/listadoproductos",
@@ -37,9 +42,15 @@ const routes = [
   },
   {
     path: "/login",
-    name: "login",
+    name: "Login",
     component: () => import("../views/Login"),
   },
+  {
+    path: "/registro",
+    name: "RegistroUser",
+    component: () => import("../views/RegistroUser"),
+  },
+
 ];
 
 const router = new VueRouter({

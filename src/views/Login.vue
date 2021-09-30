@@ -2,24 +2,25 @@
   <div class="home">
     <div>
         <MenuLogin msg=""/>
-</div>
-<br>
+    </div>
+    <br>
     <div>
-        <CrearUsuario msg="Ingreso de Usuario"/>
-</div>
+        <Flogin msg="Ingreso de Usuario"/>
+    </div>
+    
+
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import Flogin from '@/components/Flogin.vue'
 import MenuLogin from '@/components/MenuLogin.vue'
-import CrearUsuario from '@/components/CrearUsuario.vue'
-
 export default {
-  name: 'login',
+  name: 'Login',
   components: {
-    MenuLogin,
-    CrearUsuario
+  MenuLogin,
+  Flogin
   }
 }
 </script>

@@ -17,6 +17,7 @@
                 <th>Stock</th>
                  <th>Agregar</th>
                  <th>Retirar</th>
+                 
 
               
           </tr>
@@ -44,7 +45,7 @@
             <td>
               <router-link
                 :to="{ name: 'att', params: { id: producto._id } }"
-                class="btn-outline-primary"
+                class="btn-outline-secondary"
                 >Retirar Stock
               </router-link>
               </td>
@@ -100,6 +101,16 @@ export default {
 </script>
 
 <style>
+.btn-outline-primary{
+  padding:0px 10px 0px 10px ;
+  border-radius: 75px;
+  border: 1px so5lid #2A5D67;
+}
+.btn-outline-secondary{
+  padding:0px 12px 0px 12px ;
+  border-radius: 75px;
+  border: 1px solid #2A5D67;
+}
 .btn-success {
   margin-right: 10px;
 }

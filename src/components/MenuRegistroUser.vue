@@ -7,8 +7,8 @@
         <ul>
 
          
-            <li><router-link to="/registro">Registro</router-link></li> 
-            <li><router-link to="/" class="btn-Inicio-index">Salir</router-link></li>
+            <li><router-link to="/">Pagina Principal</router-link></li> 
+            <li><router-link to="/login" class="btn-Inicio-index">Inicio de Sesion</router-link></li>
         </ul>
     </td>
     </tr>
@@ -19,7 +19,7 @@
 
 <script>
   export default {
-  name: 'MenuLogin'
+  name: 'MenuRegistroUser'
   }
 
 
