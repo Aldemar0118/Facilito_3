@@ -5,7 +5,7 @@
             <img src="../assets/Logo_blanco.png" class="logo" alt="Inicio" >
 
         <ul>
-            <li><router-link to="/">Registrar Producto</router-link></li> 
+            <li><router-link to="/registroproducto">Registrar Producto</router-link></li> 
             <li><router-link to="/listadoproductos">Listado Productos</router-link></li> 
      
            
