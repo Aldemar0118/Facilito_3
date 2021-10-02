@@ -5,7 +5,7 @@
 </div>
 <br>
     <div>
-        <CrearUsuario msg="Rregistro de Usuario"/>
+        <CrearUsuario msg="Registro de Usuario"/>
 </div>
   </div>
 </template>

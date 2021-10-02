@@ -39,14 +39,14 @@
             <router-link
                 :to="{ name: 'add', params: { id: producto._id } }"
                 class="btn-outline-primary"
-                >Agregar Stock
+                >Agregar
               </router-link>
             </td>
             <td>
               <router-link
                 :to="{ name: 'att', params: { id: producto._id } }"
                 class="btn-outline-secondary"
-                >Retirar Stock
+                >Retirar
               </router-link>
               </td>
           </tr>

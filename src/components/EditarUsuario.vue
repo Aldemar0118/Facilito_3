@@ -1,6 +1,5 @@
 <template>
-  
-     <form @submit.prevent="handleSubmitForm">
+       <form @submit.prevent="handleSubmitForm">
     <table class="table1">
         <tr>
     <td  colspan="4 ">
@@ -142,43 +141,30 @@ import axios from "axios";
 export default {
   data() {
     return {
-    usuario: {
-            rol:"",
-            nombre:"",
-            tipo_documento:"",
-            num_documento: "",
-            direccion: "",
-            telefono: "",
-            email: "",
-            password:"",
-            
-    
-      },
+      usuario: {},
     };
   },
-   name: 'CrearUsuario',
+  created() {
+    let apiURL = `http://localhost:4000/api/edit-usuario/${this.$route.params.id}`;
+
+    axios.get(apiURL).then((res) => {
+      this.usuario = res.data;
+    });
+  },
+  
+   name: 'EditarUsuario',
   props: {
     msg: String
   },
   methods: {
-    handleSubmitForm() {
-      let apiURL = "http://localhost:4000/api/crear-usuario";
+    handleUpdateForm() {
+      let apiURL = `http://localhost:4000/api/update-usuario/${this.$route.params.id}`;
 
       axios
-        .post(apiURL, this.usuario)
-        .then(() => {
+        .put(apiURL, this.usuario)
+        .then((res) => {
+          console.log(res);
           this.$router.push("/listadousuarios");
-          this.usuario = {
-            
-            rol:"",
-            nombre:"",
-            tipo_documento:"",
-            num_documento: "",
-            direccion: "",
-            telefono: "",
-            email: "",
-         
-          };
         })
         .catch((error) => {
           console.log(error);
@@ -191,7 +177,7 @@ export default {
 .btn-outline-primary{
   padding:0px 10px 0px 10px ;
   border-radius: 75px;
-  border: 1px so5lid #2A5D67;
+  border: 1px solid #2A5D67;
 }
 .btn-outline-secondary{
   padding:0px 12px 0px 12px ;
@@ -208,7 +194,7 @@ h1{
 }
 table {
  
-  width: 70%;
+  width: 45%;
   margin-left: auto;
   margin-right:auto;
   border-collapse: collapse;
@@ -286,8 +272,8 @@ td{
   .btn-outline-primary{
     padding:0px 10px 0px 10px ;
     border-radius: 75px;
-   border: 1px solid #2A5D67;
     text-align: left;
+    border: 1px solid #2A5D67;
   }
   .btn-Iniciar{
     text-align: left;

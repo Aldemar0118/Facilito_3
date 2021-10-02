@@ -61,8 +61,7 @@
                 <option value="Deportivo">Deportivo</option>
                 <option value="Tacon">Tacon</option>
                 <option value="Botas">Botas</option>
-                <option value="Caballero">Caballero</option>
-                <option value="Dama">Dama</option>
+                <option value="Deportivo Bota">Deportivo Bota</option>
             </select>
         </td>
 
@@ -71,7 +70,8 @@
         </td>
 
         <td class="td1">
-            <input 
+            <input
+            placeholder="Escriba el Nombre del Producto"
             type="text" 
             v-model="producto.costo"
             class="input- input-group-text"
@@ -105,9 +105,8 @@
             <option value="Negro">Negro</option>
             <option value="Cafe">Cafe</option>
             <option value="Azul">Azul</option>
-            <option value="Mostaza">Mostaza</option>
-            <option value="Azul">Azul</option>
-            <option value="Rojo">Rojo</option>
+            <option value="Rosado">Rosado</option>
+
         </select>
 
     </td>
@@ -126,7 +125,10 @@
             <option value="Dama">Dama</option>
             <option value="Caballero">Caballero</option>
             <option value="Unisex">Unisex</option>
-            <option value="Dama">Dama</option>
+            <option value="Niño">Niño</option>
+            <option value="Niña">Niña</option>
+            <option value="Unisex Niño">Unisex Niño</option>
+        
         </select>
     </td>
 
@@ -185,6 +187,7 @@
 </template>
 
 <script>
+
 import axios from "axios";
 
 export default {
@@ -208,6 +211,8 @@ export default {
   props: {
     msg: String
   },
+
+  
   methods: {
     handleSubmitForm() {
       let apiURL = "http://localhost:4000/api/create-producto";
@@ -234,7 +239,9 @@ export default {
         });
     },
   },
+  
 };
+
 </script>
 <style scoped>
 .btn-outline-primary{

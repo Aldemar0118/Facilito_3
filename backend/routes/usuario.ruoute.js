@@ -15,7 +15,7 @@ usuarioRoute.route("/").get((req, res) => {
   });
 });
 //Crear Producto
-usuarioRoute.route("/create-usuario").post((req, res, next) => {
+usuarioRoute.route("/crear-usuario").post((req, res, next) => {
   UsuarioModel.create(req.body, (error, data) => {
     if (error) {
       return next(error);
@@ -26,7 +26,7 @@ usuarioRoute.route("/create-usuario").post((req, res, next) => {
   });
 });
 // Editar Producto
-usuarioRoute.route("/edit-usuario/:id").get((req, res) => {
+usuarioRoute.route("/editar-usuario/:id").get((req, res) => {
   UsuarioModel.findById(req.params.id, (error, data, next) => {
     if (error) {
       console.log(error);

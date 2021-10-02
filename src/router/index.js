@@ -21,6 +21,11 @@ const routes = [
     component: () => import("../views/ListadoProductos"),
   },
   {
+    path: "/listadousuarios",
+    name: "listadoproductos",
+    component: () => import("../views/ListadoUsuarios"),
+  },
+  {
     path: "/edit/:id",
     name: "edit",
     component: () => import("../views/EditarProducto"),
