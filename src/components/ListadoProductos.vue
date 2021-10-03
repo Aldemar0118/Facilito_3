@@ -62,7 +62,7 @@ export default {
     };
   },
   created() {
-    let apiURL = "http://localhost:4000/api";
+    let apiURL = "http://localhost:4000/api/prod";
     axios
       .get(apiURL)
       .then((res) => {
@@ -78,7 +78,7 @@ export default {
   },
   methods: {
     deleteProducto(id) {
-      let apiURL = `http://localhost:4000/api/delete-producto/${id}`;
+      let apiURL = `http://localhost:4000/api/prod/delete-producto/${id}`;
       let indexOfArrayItem = this.Productos.findIndex((i) => i._id === id);
 
       if (window.confirm("desea borrar el producto?")) {

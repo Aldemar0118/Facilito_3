@@ -202,7 +202,7 @@ export default {
     };
   },
   created() {
-    let apiURL = `http://localhost:4000/api/att-producto/${this.$route.params.id}`;
+    let apiURL = `http://localhost:4000/api/prod/att-producto/${this.$route.params.id}`;
 
     axios.get(apiURL).then((res) => {
       this.producto = res.data;
@@ -213,21 +213,7 @@ export default {
   props: {
     msg: String
   },
-  methods: {
-    handleUpdateForm() {
-      let apiURL = `http://localhost:4000/api/update-producto/${this.$route.params.id}`;
 
-      axios
-        .put(apiURL, this.producto)
-        .then((res) => {
-          console.log(res);
-          this.$router.push("/stockproductos");
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    },
-  },
 };
 </script>
 <style scoped>

@@ -215,7 +215,7 @@ export default {
   
   methods: {
     handleSubmitForm() {
-      let apiURL = "http://localhost:4000/api/create-producto";
+      let apiURL = "http://localhost:4000/api/prod/create-producto";
 
       axios
         .post(apiURL, this.producto)

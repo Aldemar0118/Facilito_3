@@ -5,7 +5,7 @@
       <table class="table table-responsive-lg">
         <thead class="thead  table-hover">
           <tr>
-                <th>rol</th>
+                <th>Rol</th>
                 <th>Nombre</th>
                 <th>Tipo de Documento</th>
                 <th>Documento</th>
@@ -25,11 +25,9 @@
             <td>{{ usuario.direccion }}</td>
             <td>{{ usuario.telefono }}</td>
             <td>{{ usuario.email }}</td>
-            
-         
             <td>
               <router-link
-                :to="{ name: 'editar', params: { id: usuario._id } }"
+                :to="{ name: 'edit', params: { id: usuario._id } }"
                 class="btn-outline-primary"
                 >
                 >Editar
@@ -60,7 +58,7 @@ export default {
     };
   },
   created() {
-    let apiURL = "http://localhost:4000/api";
+    let apiURL = "http://localhost:4000/api/user";
     axios
       .get(apiURL)
       .then((res) => {
@@ -76,10 +74,10 @@ export default {
   },
   methods: {
     deleteUsuario(id) {
-      let apiURL = `http://localhost:4000/api/delete-usuario/${id}`;
+      let apiURL = `http://localhost:4000/api/user/delete-usuario/${id}`;
       let indexOfArrayItem = this.Usuarios.findIndex((i) => i._id === id);
 
-      if (window.confirm("Desea borrar este Usuario?",alert)) {
+      if (window.confirm("Desea borrar Este Usuario?")) {
         axios
           .delete(apiURL)
           .then(() => {

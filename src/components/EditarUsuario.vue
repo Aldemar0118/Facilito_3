@@ -145,7 +145,7 @@ export default {
     };
   },
   created() {
-    let apiURL = `http://localhost:4000/api/edit-usuario/${this.$route.params.id}`;
+    let apiURL = `http://localhost:4000/api/user/edit-usuario/${this.$route.params.id}`;
 
     axios.get(apiURL).then((res) => {
       this.usuario = res.data;
@@ -158,7 +158,7 @@ export default {
   },
   methods: {
     handleUpdateForm() {
-      let apiURL = `http://localhost:4000/api/update-usuario/${this.$route.params.id}`;
+      let apiURL = `http://localhost:4000/api/user/update-usuario/${this.$route.params.id}`;
 
       axios
         .put(apiURL, this.usuario)
