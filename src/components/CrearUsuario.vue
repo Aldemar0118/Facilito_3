@@ -162,7 +162,7 @@ export default {
   },
   methods: {
     handleSubmitForm() {
-      let apiURL = "http://localhost:4000/api/user/crear-usuario";
+      let apiURL = "https://ell.inventariofacilito.cf:4000/api/user/crear-usuario";
 
       axios
         .post(apiURL, this.usuario)

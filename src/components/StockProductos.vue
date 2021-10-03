@@ -66,7 +66,7 @@ export default {
     };
   },
   created() {
-    let apiURL = "http://localhost:4000/api/prod";
+    let apiURL = "https://ell.inventariofacilito.cf:4000/api/prod";
     axios
       .get(apiURL)
       .then((res) => {

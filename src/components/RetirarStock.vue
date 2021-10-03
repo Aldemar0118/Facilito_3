@@ -202,7 +202,7 @@ export default {
     };
   },
   created() {
-    let apiURL = `http://localhost:4000/api/prod/att-producto/${this.$route.params.id}`;
+    let apiURL = `https://ell.inventariofacilito.cf:4000/api/prod/att-producto/${this.$route.params.id}`;
 
     axios.get(apiURL).then((res) => {
       this.producto = res.data;

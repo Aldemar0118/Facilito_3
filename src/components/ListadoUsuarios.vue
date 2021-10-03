@@ -58,7 +58,7 @@ export default {
     };
   },
   created() {
-    let apiURL = "http://localhost:4000/api/user";
+    let apiURL = "https://ell.inventariofacilito.cf:4000/api/user";
     axios
       .get(apiURL)
       .then((res) => {
@@ -74,7 +74,7 @@ export default {
   },
   methods: {
     deleteUsuario(id) {
-      let apiURL = `http://localhost:4000/api/user/delete-usuario/${id}`;
+      let apiURL = `https://ell.inventariofacilito.cf:4000/api/user/delete-usuario/${id}`;
       let indexOfArrayItem = this.Usuarios.findIndex((i) => i._id === id);
 
       if (window.confirm("Desea borrar Este Usuario?")) {
