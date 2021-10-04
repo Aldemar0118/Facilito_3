@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 let usuarioSchema = new Schema ({
+  
     rol:{type:String,maxlength:30, required:true},
     nombre:{type:String,maxlength:30,unique:true,required:true},
     tipo_documento:{type:String,maxlength:20},

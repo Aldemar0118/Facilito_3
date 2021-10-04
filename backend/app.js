@@ -21,7 +21,7 @@ mongoose
   );
 
 //const productoAPI = require("./router/producto.route");
-const usuarioAPI = require("./routes/usuario.ruoute");
+//const usuarioAPI = require("./routes/usuario.ruoute");
 const app = express();
 app.use(bodyParser.json());
 app.use(

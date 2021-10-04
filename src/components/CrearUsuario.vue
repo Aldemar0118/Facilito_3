@@ -167,7 +167,7 @@ export default {
       axios
         .post(apiURL, this.usuario)
         .then(() => {
-          this.$router.push("/listadousuarios");
+          this.$router.push("/");
           this.usuario = {
             
             rol:"",

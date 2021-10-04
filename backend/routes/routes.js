@@ -5,7 +5,7 @@ const router = express.Router();
 let ProductoModel = require("../models/Producto");
 let UsuarioModel = require("../models/Usuario");
 
-router.route("/producto").get((req, res) => {
+router.route("/").get((req, res) => {
   ProductoModel.find((error, data, next) => {
     if (error) {
       return next(error);
@@ -92,7 +92,7 @@ router.route("/delete-producto/:id").delete((req, res, next) => {
 });
 
 
-router.route("/user").get((req, res) => {
+router.route("/").get((req, res) => {
     UsuarioModel.find((error, data, next) => {
       if (error) {
         return next(error);
