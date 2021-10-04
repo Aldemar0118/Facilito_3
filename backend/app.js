@@ -20,7 +20,7 @@ mongoose
     }
   );
 
-const productoAPI = require("../backend/routes/producto.route");
+//const productoAPI = require("./router/producto.route");
 const usuarioAPI = require("./routes/usuario.ruoute");
 const app = express();
 app.use(bodyParser.json());
@@ -32,8 +32,8 @@ app.use(
 app.use(cors());
 
 // API
-app.use("/api", productoAPI);
-app.use("/api", usuarioAPI);
+//app.use("/api", productoAPI);
+app.use("/api", require('./routes/routes'));
 
 // Create port
 const port = process.env.PORT || 4000;
