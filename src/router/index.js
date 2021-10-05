@@ -12,18 +12,17 @@ const routes = [
     component: Home,
   },
   {
-    path: "/login",
+    path: "/",
     name: "Login",
     component: Login,
   },
-
   {
     path: "/registroproducto",
     name: "RegistroProducto",
     component: () => import("../views/RegistroProducto"),
   },
   {
-    path: "/listadoproductos",
+    path: "/productos",
     name: "listadoproductos",
     component: () => import("../views/ListadoProductos"),
   },
@@ -47,7 +46,11 @@ const routes = [
     name: "att",
     component: () => import("../views/RetirarStock"),
   },
-
+  {
+    path: "/login",
+    name: "Login",
+    component: () => import("../views/Login"),
+  },
   {
     path: "/registro",
     name: "RegistroUser",

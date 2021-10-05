@@ -33,12 +33,12 @@ app.use(cors());
 
 // API
 //app.use("/api", productoAPI);
-app.use("/api", require('./routes/routes'));
+app.use("/api", require("./routes/routes.js"));
 
 // Create port
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
-  console.log("Connected to port " + port); 
+  console.log("Connected to port " + port);
 });
 
 // Find 404
