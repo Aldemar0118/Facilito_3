@@ -202,7 +202,7 @@ export default {
     };
   },
   created() {
-    let apiURL = `http://localhost:4000/api/add-producto/${this.$route.params.id}`;
+    let apiURL = `https://ipa.inventariofacilito.cf/api/add-producto/${this.$route.params.id}`;
 
     axios.get(apiURL).then((res) => {
       this.producto = res.data;
@@ -215,7 +215,7 @@ export default {
   },
   methods: {
     handleUpdateForm() {
-      let apiURL = `http://localhost:4000/api/update-producto/${this.$route.params.id}`;
+      let apiURL = `https://ipa.inventariofacilito.cf/api/update-producto/${this.$route.params.id}`;
 
       axios
         .put(apiURL, this.producto)

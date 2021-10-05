@@ -18,7 +18,7 @@ npm install
 Start the mongodb server.
 mongo
 
-Start node server on http://localhost:4000/api 
+Start node server on https://ipa.inventariofacilito.cf/api 
 nodemon
 
 ```
