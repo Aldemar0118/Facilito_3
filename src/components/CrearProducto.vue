@@ -238,7 +238,7 @@ export default {
         .post(apiURL, this.producto)
         .then(() => {
           this.$router.push("/listadoproductos");
-          this.producto = {
+          this.producto = {referencia:"",
             nombre_del_producto:"",
             talla:"",
             tipo:"",
@@ -326,7 +326,7 @@ td{
 }
 
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 450px) {
   table {
     display: block;
     overflow-x: auto;
