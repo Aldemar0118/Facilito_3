@@ -2,7 +2,9 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 let productoSchema = new Schema(
-  {
+  { referencia:{
+    type:String
+  },
     nombre_del_producto: {
       type: String,
     },

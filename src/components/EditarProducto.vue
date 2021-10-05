@@ -8,6 +8,26 @@
 </td>
 </tr>
 
+<tr class="tr1">
+            <td><label>Referencia</label>
+        </td>
+                
+        <td class="td1">
+            <input 
+            type="text" 
+            class=" input- input-group-text" 
+            v-model="producto.referencia"
+            required/>
+        </td>
+
+        <td class="td1">
+            
+        </td>
+
+        <td class="td1">
+        </td>
+</tr>
+
 
         <tr class="tr1">
             <td><label>Nombre del producto</label>
@@ -32,8 +52,9 @@
             class="input- input-group-text"
             required
             >
-                <option value="">seleccione</option>
-                <option value="34">34</option>
+                <option value="">Seleccione</option>
+
+                <option value="34">34</option> 
                 <option value="35">35</option>
                 <option value="36">36</option>
                 <option value="37">37</option>
@@ -56,12 +77,13 @@
             v-model="producto.tipo"
             class="input- input-group-text"
             required>
-                <option value="">seleccione</option>
+                <option value="">Seleccione</option>
                 <option value="Deportivo">Deportivo</option>
                 <option value="Tacon">Tacon</option>
                 <option value="Botas">Botas</option>
-                <option value="Caballero">Caballero</option>
-                <option value="Dama">Dama</option>
+                <option value="Deportivo Bota">Deportivo Bota</option>
+                <option value="Escolar">Escolar</option>
+                <option value="Deportivo Escolar">Deportivo Escolar</option>
             </select>
         </td>
 
@@ -104,9 +126,11 @@
             <option value="Negro">Negro</option>
             <option value="Cafe">Cafe</option>
             <option value="Azul">Azul</option>
-            <option value="Mostaza">Mostaza</option>
-            <option value="Azul">Azul</option>
+            <option value="Blanco">Blanco</option>
+            <option value="Dorado">Dorado</option>
             <option value="Rojo">Rojo</option>
+            <option value="Amarillo">Amarillo</option>
+            <option value="Rosado">Rosado</option>
         </select>
 
     </td>
@@ -121,11 +145,13 @@
         v-model="producto.genero"
         class="input- input-group-text"
         required>
-            <option value="">seleccione</option>
+            <option value="">Seleccione</option>
             <option value="Dama">Dama</option>
             <option value="Caballero">Caballero</option>
             <option value="Unisex">Unisex</option>
-            <option value="Dama">Dama</option>
+            <option value="Niña">Niña</option>
+            <option value="Niño">Niño</option>
+            <option value="Unisex Niño">Unisex Niño</option>
         </select>
     </td>
 

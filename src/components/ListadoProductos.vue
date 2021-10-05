@@ -5,6 +5,7 @@
       <table class="table table-responsive-lg">
         <thead class="thead  table-hover">
           <tr>
+                <th>Refencia</th>
                 <th>Nombre del Producto</th>
                 <th>Talla</th>
                 <th>Tipo</th>
@@ -20,6 +21,7 @@
         </thead>
         <tbody >
            <tr v-for="producto in Productos" :key="producto._id">
+             <td>{{ producto.referencia }}</td>
             <td>{{ producto.nombre_del_producto }}</td>
             <td>{{ producto.talla }}</td>
             <td>{{ producto.tipo }}</td>

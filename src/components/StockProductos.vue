@@ -5,6 +5,7 @@
       <table class="table table-responsive-lg">
         <thead class="thead  table-hover">
           <tr>
+                <th>Referencia</th>
                 <th>Nombre del Producto</th>
                 <th>Talla</th>
                 <th>Tipo</th>
@@ -23,6 +24,7 @@
         </thead>
         <tbody >
            <tr v-for="producto in Productos" :key="producto._id">
+             <td>{{ producto.referencia }}
             <td>{{ producto.nombre_del_producto }}</td>
             <td>{{ producto.talla }}</td>
             <td>{{ producto.tipo }}</td>
@@ -38,14 +40,15 @@
             <router-link
                 :to="{ name: 'add', params: { id: producto._id } }"
                 class="btn-outline-primary"
-                >Agregar Stock
+                >Agregar
               </router-link>
             </td>
             <td>
               <router-link
                 :to="{ name: 'att', params: { id: producto._id } }"
                 class="btn-outline-primary"
-                >Retirar Stock
+                >Retirar
+
               </router-link>
               </td>
           </tr>
