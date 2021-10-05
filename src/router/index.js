@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from '../views/Home.vue'
+import Home from "../views/Home.vue";
+import Login from "../views/Login.vue";
 
 Vue.use(VueRouter);
 
@@ -10,6 +11,12 @@ const routes = [
     name: "Home",
     component: Home,
   },
+  {
+    path: "/login",
+    name: "Login",
+    component: Login,
+  },
+
   {
     path: "/registroproducto",
     name: "RegistroProducto",
@@ -40,17 +47,12 @@ const routes = [
     name: "att",
     component: () => import("../views/RetirarStock"),
   },
-  {
-    path: "/login",
-    name: "Login",
-    component: () => import("../views/Login"),
-  },
+
   {
     path: "/registro",
     name: "RegistroUser",
     component: () => import("../views/RegistroUser"),
   },
-
 ];
 
 const router = new VueRouter({
