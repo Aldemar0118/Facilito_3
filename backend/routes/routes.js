@@ -4,7 +4,7 @@ const router = express.Router();
 
 // Modelo de Producto
 
-router.get("/",productoController.getAll);
+router.get("/productos",productoController.getAll);
 router.get("/productos/:code", productoController.getByCode);
 router.post("/productos",productoController.create);
 router.put("/productos/:code",productoController.update);
