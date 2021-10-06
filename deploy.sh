@@ -1,4 +1,4 @@
-# renovar cache
+# renovar cache npm
 npm cache clean --force
 # descarta cambios locales
 git reset --hard
