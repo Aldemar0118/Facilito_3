@@ -1,18 +1,20 @@
 <template>
-  <div class="home">
-        <Home msg="Hola mindo"/>
-       
+  <div>
+    <div><MenuHome /></div>
+    <div><Home /></div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Home from '@/components/Home.vue'
+import MenuHome from "@/components/MenuHome.vue";
+import Home from "@/components/Home.vue";
 
 export default {
-  name: 'home',
+  name: "home",
   components: {
-    Home
-  }
-}
+    Home,
+    MenuHome,
+  },
+};
 </script>

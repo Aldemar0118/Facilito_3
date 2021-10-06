@@ -6,10 +6,8 @@
 
         <ul>
           <li>
-            <router-link to="/listadoproductos">Listado Productos</router-link>
+            <router-link to="/registroproducto">Crear Productos</router-link>
           </li>
-
-          <li><router-link to="/stockproductos">Stock</router-link></li>
           <li>
             <router-link to="/login" class="btn-Inicio-index"
               >Salir</router-link
@@ -23,6 +21,6 @@
 
 <script>
 export default {
-  name: "Menu",
+  name: "MenuHome",
 };
 </script>

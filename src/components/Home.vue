@@ -1,21 +1,5 @@
 <template>
-
-    <table>
-    <thead>
-<tr>
-<td colspan="2">
- <h1>{{ msg }}</h1>
-</td>
-</tr>
-</thead>
-
-
-
-
-
-
-
-</table>
+<h1>tatatatata</h1>
 </template>
 
 <script>
