@@ -1,8 +1,10 @@
 let express = require("express"),
   cors = require("cors"),
   mongoose = require("mongoose"),
-  database = require("./database"),
-  bodyParser = require("body-parser");
+  path = require("path"),
+  database = require("./database");
+
+const auth = require("./routes/auth");
 
 // Connect mongoDB
 mongoose.Promise = global.Promise;
@@ -20,23 +22,25 @@ mongoose
     }
   );
 
-const productoAPI = require("../backend/routes/producto.route");
+const userRoute = require("../backend/routes/auth");
 const app = express();
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(
-  bodyParser.urlencoded({
+  express.urlencoded({
     extended: false,
   })
 );
 app.use(cors());
+app.use(express.static(path.join(__dirname, "dist")));
+app.use("/user", userRoute);
 
 // API
-app.use("/api", productoAPI);
+app.use("/api/auth", auth);
 
 // Create port
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
-  console.log("Connected to port " + port); 
+  console.log("Connected to port " + port);
 });
 
 // Find 404
