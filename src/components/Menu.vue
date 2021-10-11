@@ -11,7 +11,7 @@
 
           <li><router-link to="/stockproductos">Stock</router-link></li>
           <li>
-            <router-link to="/login" class="btn-Inicio-index"
+            <router-link to="/#" class="btn-Inicio-index"
               >Salir</router-link
             >
           </li>

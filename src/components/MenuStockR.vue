@@ -8,7 +8,7 @@
             <li><router-link to="/">Registrar Producto</router-link></li> 
             <li><router-link to="/listadoproductos">Listado Productos</router-link></li> 
        
-            <li><router-link to="/login" class="btn-Inicio-index">Salir</router-link></li>
+            <li><router-link to="/#n" class="btn-Inicio-index">Salir</router-link></li>
         </ul>
     </td>
     </tr>
